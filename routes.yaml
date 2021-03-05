@@ -1,0 +1,18 @@
+routes:
+  /signup/: members/signup
+  /signin/: members/signin
+  /account/: members/account
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+    filter: 'tag:-hash-kr'
+  /kr/:
+    permalink: /kr/{slug}/
+    template: index
+    filter: 'tag:hash-kr'
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
